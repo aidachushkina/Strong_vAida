@@ -3,6 +3,11 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
+    // Expo's base config uses legacy "node" resolution, which ignores the
+    // "exports" maps in modern packages (e.g. @tanstack/react-query), causing
+    // their types to resolve to `any`. "bundler" matches how Metro resolves.
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": ["./src/*"]
     }

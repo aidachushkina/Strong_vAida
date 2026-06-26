@@ -15,6 +15,8 @@ export default function AppLayout() {
       <Stack.Screen name="trainer" options={{ title: 'Dashboard' }} />
       <Stack.Screen name="client" options={{ title: 'Home' }} />
       <Stack.Screen name="link-trainer" options={{ title: 'Connect with trainer' }} />
+      <Stack.Screen name="program-builder" options={{ title: 'New workout' }} />
+      <Stack.Screen name="workout/[id]" options={{ title: 'Workout' }} />
     </Stack>
   );
 }
